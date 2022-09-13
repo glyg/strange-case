@@ -12,13 +12,13 @@
 
 		<ul class="sidebar-menus sidebar-icons">
                   {{ range .Site.Menus.icons }}
-                    <li><a href="{{.URL}}">{{ .Post }}</a></li>
+                    <li>{{ .Post }} <a href="{{.URL}}"></a></li>
                   {{end}}
                 </ul>
 
 		<ul class="sidebar-menus">
                   {{ range .Site.Menus.main }}
-                    <li>&#187; <a href="{{.URL}}">{{ .Name }}</a>{{ .Post }}</li>
+                    <li>{{ .Post }} <a href="{{.URL}}">{{ .Name }}</a></li>
                   {{end}}
                 </ul>
 
